@@ -8,10 +8,27 @@ body {
   font-family: Besley, serif;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  gap: 16px;
+}
+
+.header, .left-side, .right-side, ul {
+  display: flex;
+}
+
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.left-side, .right-side {
+  align-items: center;
+  gap: 16px;  
 }
 
 .profile-image {
@@ -41,8 +58,4 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
-}
-
-ul {
-  list-style-type: none;
 }
